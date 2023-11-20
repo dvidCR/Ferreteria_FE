@@ -6,7 +6,7 @@ create table tiendas{
     id int auto_increment,
     direccion varchar(255),
     provincia varchar(50),
-    primary key(id)
+    primary key(id),
 };
 
 create table RRHH{
@@ -19,7 +19,7 @@ create table RRHH{
     fk_id_tienda int,
     nomina float,
     primary key (id),
-    foreign key(fk_id_tienda)references tiendas(id)on update cascade on delete cascade
+    foreign key(fk_id_tienda)references tiendas(id)on update cascade on delete cascade,
 };
 
 create table proveedores{
@@ -29,7 +29,7 @@ create table proveedores{
     direccion varchar(255),
     telefono varchar(15),
     email varchar(150),
-    primary key(id)
+    primary key(id),
 };
 
 create table productos{
@@ -38,7 +38,7 @@ create table productos{
     stock int,
     fk_id_proveedor int,
     precio float,
-    primary key(id)
+    primary key(id),
 };
 
 create table clientes{
@@ -48,7 +48,7 @@ create table clientes{
     telefono varchar(15)unique,
     direccion varchar(255),
     codigo_postal char(5),
-    primary key(id)
+    primary key(id),
 };
 
 create table ventas{
@@ -61,7 +61,7 @@ create table ventas{
     primary key(id),
     foreign key(fk_id_cliente)references clientes(id)on update cascade on delete no action,
     foreign key(fk_id_producto)references productos(id)on update cascade on delete no action,
-    foreign key(fk_id_RRHH)references RRHH(id)on update cascade on delete no action
+    foreign key(fk_id_RRHH)references RRHH(id)on update cascade on delete no action,
 };
 
 create table mejorVendedor{
@@ -70,5 +70,5 @@ create table mejorVendedor{
     fk_id_venta int,
     primary key(id),
     foreign key(fk_id_RRHH)references RRHH(id)on update cascade on delete no action,
-    foreign key (fk_id_venta)references ventas(id)on update cascade on delete no action
+    foreign key (fk_id_venta)references ventas(id)on update cascade on delete no action,
 };

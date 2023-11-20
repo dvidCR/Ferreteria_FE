@@ -18,7 +18,7 @@ create table RRHH{
     puesto varchar(60),
     fk_id_tienda int,
     nomina float,
-    primary key (id)
+    primary key (id),
     foreign key(fk_id_tienda)references tiendas(id)on update cascade on delete cascade
 };
 
@@ -28,7 +28,7 @@ create table proveedores{
     nombre varchar(50),
     direccion varchar(255),
     telefono varchar(15),
-    email varchar(150)
+    email varchar(150),
     primary key(id)
 };
 

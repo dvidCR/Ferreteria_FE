@@ -1,5 +1,3 @@
-<!--ATENCION AL CLIENTE / CONTRATACIÓN / SERVICIO TÉCNICO-->
-
 <!DOCTYPE html>
 <html lang="es">
     
@@ -7,67 +5,62 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferretería</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="../IMG/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
 
 </head>
 <body>
 
+  <nav>
+    <div class="logo">
+        <a href="./index.html"> <img src="../IMG/Turret Icon (Colored animation).gif" width="70" height="70" alt="Logo Ferretería"></a> 
+    </div>
+    <div class="barnav">
+        <blockquote><div><button type="button"><a href="./trabajoROL.html">|Nuestros Productos|</a></div></button> </blockquote>
+        <blockquote><div><button type="button"><a href="./curriculumAtencionClienteFerreteria.html">|Contactanos|</a></div></button> </blockquote>
+    </div>
+    </nav>
+    <div>
+    
+    </div>
+  </nav>
   
-  
-    <div class="formularioContacto">
-  
-      <div class="formulario">
-        <h2><u>Formulario de contacto</u></h2>
-        <h3>Ponte en contacto con nosotros...</h3>
-        <form>
-  
-  
-          <label for="nombre" class="colocar_nombre">Nombre:
-            <span class="obligatorio"></span>
-          </label>
-          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-          <br> <br>
-  
-          <label for="apellidos" class="colocar_apellidos">Apellidos:
-            <span class="obligatorio"></span>
-          </label>
-          <input type="text" name="introducir_apellidos" id="apellidos" required="obligatorio"
-            placeholder="Escribe tus apellidos">
+    <div class="formulario">
+      <h2><u>Formulario de contacto</u></h2>
+      <h3>Ponte en contacto con nosotros...</h3>
+      <form>
+
+
+        <label for="nombre" class="colocar_nombre">Nombre:
+        </label>
+        <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+        <br> <br>
+
+        <label for="apellidos" class="colocar_apellidos">Apellidos:
+        </label>
+        <input type="text" name="introducir_apellidos" id="apellidos" required placeholder="Escribe tus apellidos">
+        <br><br>
+        <label for="email" class="colocar_email">Email:
+        </label>
+        <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
+        <br><br>
+
+
+        <label for="telefone" class="colocar_telefono">Teléfono:
+        </label>
+        <input type="text" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+        <br> <br>
+        <label for="asunto" class="colocar_asunto">Asunto:
+        </label>
+        <input type="text" name="introducir_asunto" id="assunto" required placeholder="Escribe un asunto">
+        <br> <br>
+        <label for="mensaje" class="colocar_mensaje">Mensaje:
+        </label>
+        <input type="textarea" name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+        <br><br>
+        <input type="submit" name="enviar_formulario" id="enviar">
           <br><br>
-          <label for="email" class="colocar_email">Email:
-            <span class="obligatorio"></span>
-          </label>
-          <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-          <br><br>
-  
-  
-          <label for="telefone" class="colocar_telefono">Teléfono:
-          </label>
-          <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-          <br><br>
-  
-          <label for="asunto" class="colocar_asunto">Asunto:
-            <span class="obligatorio"></span>
-          </label>
-          <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-          <br><br>
-  
-          <label for="mensaje" class="colocar_mensaje">Mensaje:
-            <span class="obligatorio"></span>
-          </label>
-  
-          <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-            placeholder="Deja aquí tu comentario..."></textarea>
-          <br><br>
-          <button type="submit" name="enviar_formulario" id="enviar">
-            <p>Enviar</p>
-          </button>
-          <p class="aviso">
-            <span class="obligatorio">-</span>Todos los campos son obligatorios.
-            <br><br>
-        </form>
-      </div>
+      </form>
     </div>
   
     <hr size="2px" color="black">
@@ -78,46 +71,27 @@
           <h3>Envíanos tus datos...</h3>
   
   
-          <p>
-            <label for="nombreC" class="colocar_nombreC">Nombre:
-              <span class="obligatorio"></span>
-            </label>
-            <input type="text" name="introducir_nombre" id="nombreC" required="obligatorio"
-              placeholder="Escribe tu nombre">
-          </p>
-          <p>
-            <label for="apellidosC" class="colocar_apellidosC">Apellidos:
-              <span class="obligatorio"></span>
-            </label>
-            <input type="text" name="introducir_apellidos" id="apellidosC" required="obligatorio"
-              placeholder="Escribe tus apellidos">
-          </p>
-          <p>
-            <label for="emailC" class="colocar_emailC">Email:
-              <span class="obligatorio"></span>
-            </label>
-            <input type="email" name="introducir_email" id="emailC" required="obligatorio" placeholder="Escribe tu Email">
-          </p>
-          <p>
-            <label for="curriculum vitae" class="colocar_curriculum">Archivo CV:
-              <span class="obligatorio"></span>
-            </label>
-            <input type="file" name="introducir_curriculum" id="curriculumV" required="obligatorio"
-              placeholder="seleccione archivo">
-          </p>
-          <p>
-            <label for="mensajeC" class="colocar_mensajeC">Mensaje:
-              <span class="obligatorio"></span>
-            </label>
-            <textarea name="introducir_mensajeC" class="texto_mensaje" id="mensajeC" required="obligatorio"
-              placeholder="Deja aquí tu comentario..."></textarea>
-          </p>
-          <button type="submit" name="enviar_curriculum" id="enviarC">
-            <p>Enviar</p>
-          </button>
-          <p class="aviso">
-            <span class="obligatorio">-</span>Todos los campos son obligatorios.
-          </p>
+          <label for="nombreC" class="colocar_nombreC">Nombre:
+          </label>
+          <input type="text" name="introducir_nombre" id="nombreC" required placeholder="Escribe tu nombre">
+          <br> <br>
+          <label for="apellidosC" class="colocar_apellidosC">Apellidos:
+          </label>
+          <input type="text" name="introducir_apellidos" id="apellidosC" required placeholder="Escribe tus apellidos">
+          <br> <br>
+          <label for="emailC" class="colocar_emailC">Email:
+          </label>
+          <input type="email" name="introducir_email" id="emailC" required placeholder="Escribe tu Email">
+          <br> <br>
+          <label for="curriculum vitae" class="colocar_curriculum">Archivo CV:
+          </label>
+          <input type="file" name="introducir_curriculum" id="curriculumV" required placeholder="seleccione archivo">
+          <br> <br>
+          <label for="mensajeC" class="colocar_mensajeC">Mensaje:
+          </label>
+          <input type="textarea" name="introducir_mensajeC" class="texto_mensaje" id="mensajeC" required placeholder="Deja aquí tu comentario..."></textarea>
+          <br> <br>
+          <input type="submit" name="enviar_curriculum" id="enviarC">
       </form>
     </div>
     </div>
@@ -127,7 +101,7 @@
   
       <hr size="2px" color="black">
         <h3> <u>Servicio Técnico </u></h3>
-        <p href=""><img src="img/tlf.png" alt="">66 666 66 66 </p>
+        <p><img src="../IMG/tlf.png" alt="">66 666 66 66 </p>
         <p>Av.Mar Mediterráneo <br>
           info: correo@correo.com</p>
     </footer>

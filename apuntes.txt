@@ -1,7 +1,0 @@
-RRHH // puesto, tienda, turno, nomina, id_Empleado, nombre, Apellidos, DNI;unique 
-Ventas // fk_Vendedor, fk_RRHH, cantidad, fk_producto, ganancias
-Clientes // Direccion, Nombre, Apellidos, numero, Codigo Postal 
-Proveedores // NIF; unique, Nombre
-mejor vendedor //id; no es auto_increment, fk_venta, fk_RRHH, ganancias
-compras // cliente, producto, cantidad, direccion, correo, telefono
-producto // id, nombre, stock, fk_id_proveedor, precio

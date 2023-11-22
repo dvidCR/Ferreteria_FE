@@ -1,0 +1,127 @@
+<<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ferretería - Compra de productos</title>
+    <link rel="icon" type="image/x-icon" href="../IMG/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  </head>
+  <body>
+    <nav>
+      <div>
+          <a href="./index.html"> <img src="../IMG/Turret Icon (Colored animation).gif" width="70" height="70" alt="Logo Ferretería"></a> 
+      </div>
+      <div class="barnav">
+          <blockquote><div><button type="button"><a href="./trabajoROL.html">|Nuestros Productos|</a></div></button> </blockquote>
+          <blockquote><div><button type="button"><a href="./curriculumAtencionClienteFerreteria.html">|Contactanos|</a></div></button> </blockquote>
+      </div>
+      </nav>
+      <div>
+      
+      </div>
+    </nav>
+
+    <div class="vacio"></div>
+    
+    <h1>Bienvenido a la Ferretería</h1>
+
+    <div class="producto">
+      <img src="../IMG/taladroelectrico.jpeg" width="150" height="150"></a>
+      <h2>Taladro eléctrico</h2>
+      <p>Martillo perforador y cincelador para trabajar con potencia en hormigón, piedra, metal o madera. Rueda de ajuste para limitar el número de revoluciones.
+        Empuñadura en posición frontal con giro de 360º. Potencia asignada: 1050 W.<em> Precio: $100</em></p>
+      <button class="btn-comprar" onclick="agregarAlCarrito('Taladro eléctrico', 100)">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="../IMG/llaveinglesa.jpeg" width="150" height="150">
+      <h2>Llave inglesa ajustable</h2>
+      <p>LLaves planas fijas abiertas por ambos lados de fabricacion profesionales en cromo, templadas y endurecidas.
+        Acabado en satinado con triple capa de cromo que impide a corrosión. Cuenta con un tamaño de 8 pulgadas. <em>Precio: $20</em></p>
+      <button class="btn-comprar" onclick="agregarAlCarrito('Llave inglesa ajustable', 20)">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="../IMG/martillodeuña.jpeg" width="150" height="150">
+      <h2>Martillo de uña</h2>
+      <p>Martillo con cabeza de acero con acabado pulido, uña recta y mango de madera de encino. Cara: 29 mm (1 1/8). Cabeza: 450 g. Mango: 33 cm. <em>Precio: $60 </em></p>
+      <button class="btn-comprar" onclick="agregarAlCarrito('Martillo de uña', 60)">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="../IMG/destornilladormecanico.jpeg" width="150" height="150">
+      <h2>Destornillador mecánico</h2>
+      <p> Atornillador a Batería 3,6 V BOSCH IXO VII. Mayor autonomía de hasta 190 tornillos gracias a su batería mejorada de iones de litio de 2,0 Ah. Empuñadura antivibraciones Softgrip.<em> Precio: $10</em></p>
+      <button class="btn-comprar" onclick="agregarAlCarrito('Destornillador mecánico', 10)">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="../IMG/pistoladesilicona.jpeg" width="150" height="150">
+      <h2>Pistola de silicona</h2>
+      <p> esta pistola de pegamento de doble temperatura a batería de 18V ONE+™ tarda sólo 3 minutos en calentarse hasta alcanzar la temperatura de trabajo. La pistola de pegamento tiene dos ajustes de temperatura para una mayor versatilidad(200º y 130º). Esta pistola de pegamento acepta barras de pegamento de 11 mm y 12 mm.<em> Precio: $50</em></p>
+      <button class="btn-comprar" onclick="agregarAlCarrito('Pistola de silicona', 50)">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="../IMG/alicate.jpeg" width="150" height="150">
+      <h2>Alicate</h2>
+      <p> Alicates Linesman de 6 pulgadas en acero CRV para torcer y cortar cables, tornillos de sujeción.<em> Precio: $5</em></p>
+      <button class="btn-comprar" onclick="agregarAlCarrito('Alicate', 5)">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="../IMG/flexometro.jpeg" width="150" height="150">
+      <h2>Flexómetro</h2>
+      <p> Flexómetro Tylon 5mX19mm 1-30-697 de Stanley. Flexómetro de 5 metros con cinta de acero ultra resistente con revestimiento Tylon que aumenta hasta un 50% la durabilidad de la hoja.  <em>Precio: $5</em></p>
+      <button class="btn-comprar" onclick="agregarAlCarrito('Flexómetro', 5)">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="../IMG/cuter.jpeg" width="150" height="150">
+      <h2>Cuter</h2>
+      <p> Cúter desechable con cuerpo de plástico. Hoja trapezoidal retráctil automáticamente. Ambidiestro.<em> Precio: $4</em></p>
+      <button class="btn-comprar" onclick="agregarAlCarrito('Cuter', 4)">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="../IMG/sierra.jpeg" width="250" height="150">
+      <h2>Sierra</h2>
+      <p> Sierra de 38 cm para madera con hoja de acero y mango ergonómico para corte recto y angulado. <em> Precio: $27</em></p>
+      <button class="btn-comprar" onclick="agregarAlCarrito('Sierra', 27)">Añadir al carrito</button>
+    </div>
+
+
+
+    <h2>Lista de la Compra</h2>
+    <div id="carrito">
+      
+    </div>
+
+    <!--carrito-->
+    <script>
+      let carrito = [];
+
+      function agregarAlCarrito(producto, precio) {
+        carrito.push({ producto, precio });
+        mostrarCarrito();
+      }
+
+      function mostrarCarrito() {
+        const carritoContainer = document.getElementById('carrito');
+        carritoContainer.innerHTML = '';
+
+        carrito.forEach(item => {
+          const productoDiv = document.createElement('div');
+          productoDiv.innerHTML = `${item.producto} - Precio: $${item.precio}`;
+          carritoContainer.appendChild(productoDiv);
+        });
+      }
+    </script>
+    <footer>
+      <h3> <u>Servicio Técnico </u></h3>
+      <p><img src="../IMG/tlf.png" alt="">66 666 66 66 </p>
+      <p>Av.Mar Mediterráneo <br>
+        info: correo@correo.com</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+.formularioContacto{
+    margin: 10%;
+}
+
+.segundo{
+    position: flex;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.producto {
+    border: 3px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-comprar {
+    background-color: darkorange;
+}
+
+em {
+    color:green;
+}
+
+nav{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background: aliceblue;
+    font-family: sans-serif;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+nav .logo{
+    font-size: 24px;
+    font-weight:black;
+}
+
+nav .barnav{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    margin-right: 30px;
+}
+
+nav .barnav div{
+    padding: 10px 20px;
+    font-size: 31px;
+    text-decoration: none;
+    text-decoration-color: darkorange;
+}
+
+nav .barnav div:hover{
+    cursor: pointer;
+    background:darkorange;
+}
+
+.contenido{
+    height: 1100px;
+    margin-top: 60px;
+
+}
+
+nav .barnav div a{
+    font-size: 31px;
+    text-decoration: none;
+    color: darkorange;
+    text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+} 
+
+.barra-superior {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Añade otros estilos según sea necesario */
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.vacio {
+    margin-bottom: 10%;
+}
+
+.bloques {
+    border-style: outset;
+    border-color: grey;
+    background-color: rgba(164, 164, 164, 0.5);
+    text-align: center;
+}
+.bloques p {
+    font-size: 25px;
+}
+
+footer {
+    background-color: rgba(164, 164, 164, 0.5);
+}

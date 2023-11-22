@@ -39,7 +39,8 @@ create table productos(
     stock int,
     fk_id_proveedor int,
     precio float,
-    primary key(id)
+    primary key(id),
+    foreign key(fk_id_proveedor)references proveedores(id)on update cascade on delete cascade
 );
 
 create table clientes(

@@ -4,7 +4,10 @@ body {
 }
 
 .producto {
-    border: 3px solid #ccc;
+    background-color: rgb(199, 199, 199); 
+    border-style: inset;
+    border-color: grey;
+    border-width: 3px;
     padding: 15px;
     margin-bottom: 10px;
 }
@@ -14,27 +17,27 @@ body {
 }
 
 em {
-    color:green;
+    color: green;
 }
 
 nav{
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    background: aliceblue;
+    background-color: rgb(197, 228, 255); 
     font-family: sans-serif;
-    position:fixed;
-    top:0;
-    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 nav .logo{
-    font-size: 24px;
-    font-weight:black;
+    margin-left: 10px;
 }
 
 nav .barnav{
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(4,auto);
     margin-right: 30px;
 }
@@ -61,6 +64,32 @@ nav .barnav div a{
                0px -1px 0px black;
 }
 
+.formulario {
+    background-color: rgb(199, 199, 199); 
+    float: left;
+    margin-left: 100px;
+    border-style: inset;
+    border-color: black;
+    margin-bottom: 20px;
+    border-width: 5px;
+    padding: 20px;
+}
+
+.cv {
+    background-color: rgb(199, 199, 199); 
+    float: right;
+    margin-right: 100px;
+    border-style: inset;
+    border-color: black;
+    margin-bottom: 20px;
+    border-width: 5px;
+    padding: 20px;
+}
+
+.colocar_mensaje{
+    float: left;
+}
+
 h1 {
     font-size: 50px;
 }
@@ -70,17 +99,44 @@ h1 {
 }
 
 .bloques {
-    border-style: outset;
+    border-style: inset;
     border-color: grey;
-    background-color: rgba(164, 164, 164, 0.5);
+    background-color: rgb(199, 199, 199); 
     text-align: center;
 }
 .bloques p {
     font-size: 25px;
 }
 
+.bienvenida {
+    background-color: rgb(197, 228, 255); 
+    font-size: 25px;
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.trabajo{
+    background-color: rgb(255, 58, 58);
+    font-size: 25px;
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.especial {
+    text-decoration: none;
+    color: black;
+}
+
+.izquierda {
+    float: left;
+    margin-right: 30px;
+    
+}
+
 footer {
-    background-color: rgba(164, 164, 164, 0.5);
+    background-color: rgb(197, 228, 255); 
+    float: left;
+    left: 0;
     width: 100%;
 }
 
@@ -92,7 +148,7 @@ a {
     color: black
 }
 
-a:hover{
+footer a:hover{
     color: darkorange;
     cursor: pointer;
 }
